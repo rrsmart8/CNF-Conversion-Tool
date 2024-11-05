@@ -1,0 +1,28 @@
+Carbunaru Rares-Andrei
+325CB
+
+Metoda de rezolvare: Tseytin transformation
+
+Legenda:
+
+- '~' - NOT
+- '&&' - AND
+- '||' - OR
+
+Tseytin transformation:
+
+AND => C = A && B => (~A || ~B || C) && (A || ~C) && (B || ~C)
+
+OR => C = A || B => (~A || C) && (~B || C) && (A || B || ~C)
+
+NOT => C = ~A => (~A || ~C) && (A || C)
+
+Implementare:
+
+    Am citit datele de intrare din fisierle de input si am creat un vector de string-uri in care am pus fiecare linie din fisier.
+Apoi, am inceput sa construiesc formula de expresie booleana, parcurgand vectorul creat anterior.
+    Functiile not_gate, and_gate si or_gate primesc un input si un output si construiesc formula de expresie generalizata pentru
+n variabile primite ca input.Apoi, numarul de clauze creste in functie de numarul de variabile primite ca input. (Se numara parantezele din
+formula ce urmeaza sa se adauge celei initiale).
+    In final, se fac prelucrari asupra formulei pentru a ramane cu formatul cerut de catre checker si apoi am afisat rezultatul, adica
+toate clauzele si variabilele urmate de 0.
