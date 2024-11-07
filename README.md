@@ -126,6 +126,3 @@ The program ensures proper **memory allocation and deallocation**:
 
 This project is open source and can be freely modified and distributed.
 
-## Authors
-
-- **Your Name** - Initial work and implementation.
