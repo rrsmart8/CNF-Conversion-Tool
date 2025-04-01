@@ -1,5 +1,3 @@
-# README for CNF Conversion Tool
-
 ## Overview
 This project is a **CNF Conversion Tool** that reads gate definitions from an input file and outputs a **Conjunctive Normal Form (CNF)** representation of the circuit. The tool handles **AND**, **OR**, and **NOT** gates, and generates the equivalent CNF formulas to be used in SAT solvers. The tool also includes a shell script to verify the output using **CaDiCaL**, a SAT solver.
 
